@@ -1,0 +1,46 @@
+
+  /* HEADER */
+header {
+  margin-bottom: 50px;
+}
+  .navbar-header {
+    padding-left: 10%;
+  }
+    .navbar-right {
+      margin-right: 50px;
+    }
+    .navbar-brand {
+      float: none;
+    }
+    .belax8-logo {
+      width: 40px;
+      margin: 5px;
+    }
+
+
+  /* MAIN CONTENT */
+h1 {
+  text-align: center;
+}
+  #home {
+    background: #0091ce;
+  }
+  #experience {
+    background: #70ff92;
+  }
+  #portfolio {
+    background: #cc6aff;
+  }
+  #contact {
+    background: #ddd;
+  }
+
+
+/* FOOTER */
+footer {
+  background: #333;
+  color: white;
+}
+  footer p {
+    text-align: center;
+  }
