@@ -22,6 +22,9 @@ header {
 h1 {
   text-align: center;
 }
+  .tabs {
+    min-height: 800px;
+  }
   #home {
     background: #0091ce;
   }

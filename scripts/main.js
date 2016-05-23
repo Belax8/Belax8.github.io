@@ -7,7 +7,8 @@ var portfolio = {
   cacheDom: function() {
     //variables in the nav
     this.$nav = $("nav");
-    this.$homeLi = $('a[href$="#home"');
+    this.$homeAllLi = $('a[href$="#home"');
+    this.$homeLi = this.$nav.find("li#home-li");
     this.$experienceLi = this.$nav.find("#experience-li");
     this.$portfolioLi = this.$nav.find("#portfolio-li");
     this.$contactLi = this.$nav.find("#contact-li");
@@ -25,7 +26,7 @@ var portfolio = {
     this.$home.fadeIn();
   },
   bindEvents: function() {
-    this.$homeLi.on("click", this.homeActive.bind(this));
+    this.$homeAllLi.on("click", this.homeActive.bind(this));
     this.$experienceLi.on("click", this.experienceActive.bind(this));
     this.$portfolioLi.on("click", this.portfolioActive.bind(this));
     this.$contactLi.on("click", this.contactActive.bind(this));
