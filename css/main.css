@@ -22,6 +22,7 @@ header {
 h1 {
   text-align: center;
   margin-top: 60px;
+  font-weight: bold;
 }
   .tabs {
     min-height: 800px;
@@ -35,6 +36,10 @@ h1 {
   #portfolio {
     background: #cc6aff;
   }
+    .cap-distributing-logo {
+      width: 500px;
+      background: white;
+    }
   #contact {
     background: #ddd;
   }
@@ -44,9 +49,10 @@ h1 {
 footer {
   background: #333;
   color: white;
+  padding: 10px;
 }
   footer p {
-    margin: 20px;
+    margin: 10px;
     text-align: center;
   }
   footer a {
