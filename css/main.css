@@ -21,6 +21,7 @@ header {
   /* MAIN CONTENT */
 h1 {
   text-align: center;
+  margin-top: 60px;
 }
   .tabs {
     min-height: 800px;
@@ -45,5 +46,6 @@ footer {
   color: white;
 }
   footer p {
+    margin: 20px;
     text-align: center;
   }
