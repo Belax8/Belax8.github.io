@@ -19,30 +19,43 @@ header {
 
 
   /* MAIN CONTENT */
+.container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 h1 {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 50px;
   font-weight: bold;
 }
   .tabs {
     min-height: 800px;
   }
   #home {
-    background: #0091ce;
+    background: #1ebdff;
   }
   #experience {
     background: #70ff92;
-  }
-  #portfolio {
-    background: #cc6aff;
   }
     .cap-distributing-logo {
       width: 100%;
       background: white;
     }
+  #portfolio {
+    background: #de9dff;
+  }
+    h2 {
+      text-align: center;
+    }
+    .codepen-snippets {
+      width: 100%;
+    }
   #contact {
     background: #ddd;
   }
+    #contact p {
+      text-align: center;
+    }
 
 
 /* FOOTER */
