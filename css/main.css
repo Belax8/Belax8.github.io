@@ -1,0 +1,97 @@
+  /* MAIN */
+a:link, a:visited, a:hover, a:active {
+	color: #0091ce;
+}
+p {
+  font-size: 20px;
+}
+.main-p {
+	text-align: center;
+	margin: 50px 0;
+}
+
+  /* HEADER */
+header {
+  margin-bottom: 50px;
+}
+  .navbar-header {
+    padding-left: 10%;
+  }
+    .navbar-right {
+      margin-right: 50px;
+    }
+    .navbar-brand {
+      float: none;
+    }
+    .belax8-logo {
+      width: 40px;
+      margin: 5px;
+    }
+
+
+  /* MAIN CONTENT */
+.container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+  .tabs {
+    min-height: 800px;
+  }
+  #home {
+    background: #1ebdff;
+  }
+  #experience {
+    background: #70ff92;
+  }
+    .experience-img {
+      width: 100%;
+      background: white;
+    }
+		#experience h3 a:link,#experience h3 a:visited,#experience h3 a:hover,#experience h3 a:active {
+      color: black;
+      text-decoration: none;
+    }
+  #portfolio {
+    background: #de9dff;
+  }
+    h2 {
+      text-align: center;
+    }
+    .codepen-snippets {
+      width: 100%;
+    }
+  #contact {
+    background: #ddd;
+  }
+    #contact p {
+      text-align: center;
+    }
+
+
+
+/* FOOTER */
+footer {
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+  footer p {
+    margin: 10px;
+    text-align: center;
+  }
+  footer a {
+    text-decoration: none;
+  }
+    footer i {
+      margin: 0 10px;
+      color: white;
+    }
+      footer i:hover {
+        color: #0091ce;
+      }
