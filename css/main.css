@@ -5,6 +5,10 @@ a:link, a:visited, a:hover, a:active {
 p {
   font-size: 20px;
 }
+.main-p {
+	text-align: center;
+	margin: 50px 0;
+}
 
   /* HEADER */
 header {
@@ -42,9 +46,6 @@ h1 {
   #home {
     background: #1ebdff;
   }
-    #home p {
-      text-align: center;
-    }
   #experience {
     background: #70ff92;
   }
