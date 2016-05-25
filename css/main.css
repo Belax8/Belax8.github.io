@@ -1,7 +1,6 @@
   /* MAIN */
 a:link, a:visited, a:hover, a:active {
-	color: black;
-  text-decoration: none;
+	color: #0091ce;
 }
 p {
   font-size: 20px;
@@ -49,9 +48,13 @@ h1 {
   #experience {
     background: #70ff92;
   }
-    .cap-distributing-logo {
+    .experience-img {
       width: 100%;
       background: white;
+    }
+		#experience h3 a:link,#experience h3 a:visited,#experience h3 a:hover,#experience h3 a:active {
+      color: black;
+      text-decoration: none;
     }
   #portfolio {
     background: #de9dff;
@@ -68,10 +71,7 @@ h1 {
     #contact p {
       text-align: center;
     }
-    #contact a:link,#contact a:visited,#contact a:hover,#contact a:active {
-      color: #0091ce;
-      text-decoration: underline;
-    }
+
 
 
 /* FOOTER */
