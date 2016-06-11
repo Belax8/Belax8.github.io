@@ -41,7 +41,7 @@ h1 {
   font-weight: bold;
 }
   .tabs {
-    min-height: 800px;
+    min-height: 1000px;
   }
   #home {
     background: #1ebdff;
@@ -75,6 +75,9 @@ h1 {
     #contact p {
       text-align: center;
     }
+		#contact .contact-form {
+			padding: 10px;
+		}
 
 
 
