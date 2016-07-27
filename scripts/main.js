@@ -21,7 +21,7 @@ function sendMessage() {
 
   $.ajax({
     type: "POST",
-    url: "http://rest.learncode.academy/api/aTjPn7InWo8BlqrR/mB2974BuosGlyUks",
+    url: "http://rest.learncode.academy/api/aTjPn7InWlsdf8BlqrR/mB2974HGuosGlyUks",
     data: messageInfo,
     success: function(newMessage) {
       //console.log(newMessage);
