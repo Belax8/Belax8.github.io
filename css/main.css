@@ -53,6 +53,10 @@ h1 {
       width: 100%;
       background: white;
     }
+      .rent-dynamics-logo {
+        background: #303030;
+        padding: 10px;
+      }
 		#experience h3 {
 			text-align: center;
 		}
