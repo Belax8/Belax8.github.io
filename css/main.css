@@ -7,7 +7,7 @@ p {
 }
 .main-p {
 	text-align: center;
-	margin: 50px 0;
+	margin: 40px 0;
 }
 
   /* HEADER */
@@ -31,8 +31,8 @@ header {
 
   /* MAIN CONTENT */
 .container {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 h1 {
   text-align: center;
@@ -41,13 +41,18 @@ h1 {
   font-weight: bold;
 }
   .tabs {
-    min-height: 1000px;
+    min-height: 300px;
   }
   #home {
-    background: #1ebdff;
+    background: #ddd;
   }
+    .chase-img {
+      display: block;
+      margin: 0 auto;
+      width: 90%;
+    }
   #experience {
-    background: #70ff92;
+    background: #ddd;
   }
     .experience-img {
       width: 100%;
@@ -55,7 +60,7 @@ h1 {
     }
       .rent-dynamics-logo {
         background: #303030;
-        padding: 10px;
+        padding: 15px;
       }
 		#experience h3 {
 			text-align: center;
@@ -65,7 +70,7 @@ h1 {
 	      text-decoration: none;
 	    }
   #portfolio {
-    background: #de9dff;
+    background: #ddd;
   }
     h2 {
       text-align: center;
@@ -89,10 +94,9 @@ h1 {
 footer {
   background: #333;
   color: white;
-  padding: 10px;
 }
   footer p {
-    margin: 10px;
+    margin: 5px;
     text-align: center;
   }
   footer a {
