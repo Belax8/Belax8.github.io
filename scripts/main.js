@@ -1,4 +1,23 @@
 
+  /* SCROLL TO TOP */
+$('.scroll-to-home').click(function() {
+	$('html, body').animate({scrollTop: $("#home").offset().top}, 'slow');
+	return false;
+});
+$('.scroll-to-experience').click(function() {
+	$('html, body').animate({scrollTop: $("#experience").offset().top}, 'slow');
+	return false;
+});
+$('.scroll-to-portfolio').click(function() {
+	$('html, body').animate({scrollTop: $("#portfolio").offset().top}, 'slow');
+	return false;
+});
+$('.scroll-to-contact').click(function() {
+	$('html, body').animate({scrollTop: $("#contact").offset().top}, 'slow');
+	return false;
+});
+
+
     /* CONTACT FORM */
 var $el = $(".container");
 var $name = $el.find("#name");
