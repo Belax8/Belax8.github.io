@@ -1,4 +1,7 @@
   /* MAIN */
+body {
+  background: #ddd !important;
+}
 a:link, a:visited, a:hover, a:active {
 	color: #0091ce;
 }

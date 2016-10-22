@@ -18,47 +18,6 @@ $('.scroll-to-contact').click(function() {
 });
 
 
-    /* CONTACT FORM */
-var $el = $(".container");
-var $name = $el.find("#name");
-var $email = $el.find("#email");
-var $subject = $el.find("#subject");
-var $message = $el.find("#message");
-var $submit = $el.find("#submit");
-var $formStatus = $el.find(".form-status");
-
-$submit.on("click", sendMessage);
-
-function sendMessage() {
-  var messageInfo = {
-    name: $name.val(),
-    email: $email.val(),
-    subject: $subject.val(),
-    message: $message.val(),
-    website: "belax8.github.io"
-  };
-
-  $.ajax({
-    type: "POST",
-    url: "http://rest.learncode.academy/api/aTjPn7InWlsdf8BlqrR/mB2974HGuosGlyUks",
-    data: messageInfo,
-    success: function(newMessage) {
-      //console.log(newMessage);
-      $formStatus.html('<div class="alert alert-success" role="alert">Your message has been sent!</div>');
-    },
-    error: function() {
-      alert("An error occurred while sending your message!");
-    }
-  });
-
-  $name.val("");
-  $email.val("");
-  $subject.val("");
-  $message.val("");
-
-}
-
-
     /* GOOGLE ANALYTICS */
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
