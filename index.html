@@ -214,63 +214,66 @@
     <div class="tabs" id="portfolio">
 			<div class="container">
 				<h1>Portfolio</h1>
-				<div class="row">
-					<div class="col-md-6">
-						<h2>Code Wars API</h2>
-						<a href="http://codepen.io/Belax8/full/WxQmmX/" >
-							<img class="codepen-snippets" src="images/codewars.png" alt="Code Wars Screenshot">
-						</a>
-						<p>View live demo on <a href="http://codepen.io/Belax8/full/WxQmmX/" >CodePen.</a></p>
+        <div class="row">
+          <div class="col-md-6">
+            <div id="codeWarsData">
+              <h2>Code Wars</h2>
+              <p>An error occurred while getting the Code Wars data!</p>
+            </div>
+            <script type="text/javascript">
+              function getCodeWarsData() {
+                $.ajax({
+                  type: "GET",
+                  url: "https://crossorigin.me/https://www.codewars.com/api/v1/users/Belax8?access_key=KEi4jmQhMKZeTQXxaQNc",
+                  dataType: "JSON",
+                  jsonpCallback: "callback",
+                  success: function(data) { renderCodeWarsData(data); },
+                  error: function(error) { console.log('Error getting Code Wars data!'); }
+                });
+              }
+              function renderCodeWarsData(data) {
+                var codeWarsDiv = $('#codeWarsData');
+                var html = '';
+                html += '<h2><img class="codewars-logo" src="images/codewars.png"> Code Wars - ' + data.username + ' (' + data.name + ')</h2>';
+                html += '<h3>Overall Rank : ' + data.ranks.overall.name + '</h3>';
+                html += '<h3>Leaderboard Position : ' + data.leaderboardPosition + '</h3>';
+                html += '<h3>Total Katas Completed : ' + data.codeChallenges.totalCompleted + '</h3>';
+                html += '<h3>JavaScript Score : ' + data.ranks.languages.javascript.score + '</h3>';
+                html += '<h3>Python Score : ' + data.ranks.languages.python.score + '</h3>';
+                html += '<h3>Check out <a href="http://www.codewars.com/r/J4C9eA" target="_blank">CodeWars</a>!</h3>';
+                codeWarsDiv.html(html);
+              }
+              getCodeWarsData();
+            </script>
 					</div><!-- End .col-md-6 -->
-					<div class="col-md-6">
-						<h2>AJAX Friend List</h2>
-						<a href="http://codepen.io/Belax8/full/XKJNZY/" >
-							<img class="codepen-snippets" src="images/ajax-friend-list.png" alt="AJAX Friend List Screenshot">
-						</a>
-						<p>View live demo on <a href="http://codepen.io/Belax8/full/XKJNZY/" >CodePen.</a></p>
-					</div><!-- End .col-md-6 -->
-				</div><!-- End .row -->
-				<div class="row">
-
-					<div class="col-md-6">
-						<h2>Twitchtv JSON API</h2>
-						<a href="http://codepen.io/Belax8/full/jqoeLJ/" >
-							<img class="codepen-snippets" src="images/twitch-tv.png" alt="Twitch TV Screenshot">
-						</a>
-						<p>View live demo on <a href="http://codepen.io/Belax8/full/jqoeLJ/" >CodePen.</a></p>
-						<p>View source code on <a href="https://github.com/Belax8/my-free-code-camp-code/tree/master/03%20Intermediate%20Front%20End%20Development%20Projects/04%20Use%20the%20Twitchtv%20JSON%20API" >GitHub</a></p>
-					</div><!-- End .col-md-6 -->
-
-					<div class="col-md-6">
-						<h2>Wikipedia Viewer</h2>
-						<a href="http://codepen.io/Belax8/full/grZVod" >
-							<img class="codepen-snippets" src="images/wiki-viewer.png" alt="Wiki Viewer Screenshot">
-						</a>
-						<p>View live demo on <a href="http://codepen.io/Belax8/full/grZVod" >CodePen.</a></p>
-						<p>View source code on <a href="https://github.com/Belax8/my-free-code-camp-code/tree/master/03%20Intermediate%20Front%20End%20Development%20Projects/03%20Build%20a%20Wikipedia%20Viewer" >GitHub</a></p>
-					</div><!-- End .col-md-6 -->
-
-				</div><!-- End .row -->
-				<div class="row">
-
-					<div class="col-md-6">
-						<h2>Local Weather</h2>
-						<a href="http://codepen.io/Belax8/full/EKrWdZ/" >
-							<img class="codepen-snippets" src="images/local-weather.png" alt="Local Weather Screenshot">
-						</a>
-						<p>View live demo on <a href="http://codepen.io/Belax8/full/EKrWdZ/" >CodePen.</a></p>
-						<p>View source code on <a href="https://github.com/Belax8/my-free-code-camp-code/tree/master/03%20Intermediate%20Front%20End%20Development%20Projects/02%20Show%20the%20Local%20Weather" >GitHub</a></p>
-					</div><!-- End .col-md-6 -->
-
-					<div class="col-md-6">
-						<h2>Random Quote Machine</h2>
-						<a href="http://codepen.io/Belax8/full/EKpdQa/" >
-							<img class="codepen-snippets" src="images/random-quote.png" alt="Random Quote Screenshot">
-						</a>
-						<p>View live demo on <a href="http://codepen.io/Belax8/full/EKpdQa/" >CodePen.</a></p>
-						<p>View source code on <a href="https://github.com/Belax8/my-free-code-camp-code/tree/master/03%20Intermediate%20Front%20End%20Development%20Projects/01%20Random%20Quote%20Machine" >GitHub</a></p>
-					</div><!-- End .col-md-6 -->
-
+          <div class="col-md-6">
+            <div id="githubData">
+              <h2>Github</h2>
+              <p>An error occurred while getting the Github data!</p>
+            </div>
+            <script type="text/javascript">
+              function getGithubData() {
+                $.ajax({
+                  type: "GET",
+                  url: "https://api.github.com/users/belax8",
+                  dataType: "JSON",
+                  success: function(data) { renderGithubData(data); },
+                  error: function(error) { console.log('Error getting Github data!'); }
+                });
+              }
+              function renderGithubData(data) {
+                var githubDiv = $('#githubData');
+                var html = '';
+                html += '<h2><img src="images/github.png" class="github-logo"> Github - ' + data.login + ' (' + data.name + ')</h2>';
+                html += '<h3>Company: ' + data.company + '</h3>';
+                html += '<h3>Followers: ' + data.followers + '</h3>';
+                html += '<h3>Following: ' + data.following + '</h3>';
+                html += '<h3>Check out <a href="https://www.github.com" target="_blank">Github</a>!</h3>';
+                githubDiv.html(html);
+              }
+              getGithubData();
+            </script>
+          </div><!-- End .col-md-6 -->
 				</div><!-- End .row -->
 			</div><!-- End .container -->
 		</div><!-- End #portfolio -->
@@ -372,13 +375,13 @@
 
 				.class123-twocol { display:inline-table;vertical-align:bottom; width:45%; margin:0 5px 0 0;}
 				.class123-threecol { display:inline-table;vertical-align:bottom;width:30%; margin:0 5px 0 0;}
-				
+
 				.class123-savereturn { background: none; border: medium none; text-decoration: underline; cursor: pointer; padding:5px 10px;}
 				.class123-goback { background: none; border: medium none; text-decoration: underline; cursor: pointer; padding:5px 10px; color: #C80042;}
 				.class123-pbline { display:none; }
 				.class123-pbprev { background: none; border: medium none; text-decoration: underline; cursor: pointer; padding-left:0px; padding-right:0px; }
 				.class123_maintable {}
-				
+
 				#mainform123 .class123-pagination { background-color:transparent; }
 				#errordiv { margin-top:0px;  }
 				.currentPageActive { display:block; }
@@ -397,7 +400,7 @@
 
 				font-size:10px;position:absolute;margin-left:6px;margin-top:5px; line-height:100%; }
 
-				
+
 			</style>
 
 			<link href="http://cdn-main2.123contactform.com/styles/form_fields.css?ef276a2" rel="stylesheet" type="text/css"  />
@@ -426,7 +429,7 @@
 					font-size:10px;
 				}
 				/* --- BTV 30.05.2016: moved a lot of CSS to /styles/form_new.css --- */
-				
+
 			</style>
 
 			<link href="http://cdn-main.123contactform.com/styles/form_new.css?ef276a2" rel="stylesheet" type="text/css"  />
@@ -474,7 +477,7 @@
 					if (id==selectedfield) { /* alert('do nothing'); */	}
 
 					// now the field rules
-					
+
 					InputRules2('beginning','0','0');
 				}
 
@@ -540,7 +543,7 @@
 				<!-- Buttons begin here -->
 				<div id="fieldcontainer5" class="fieldcontainer thebuttons" style="">
 				<div class="row currentPage1 currentPageActive"><div class="rowright col-lg-9 col-md-9 col-sm-9 col-md-offset-3 col-lg-offset-3 col-sm-offset-3" align="left"><div class="row control-row"><div class="subitem col-lg-12 col-md-12 col-sm-12"><input type="hidden" name="go_back_and_edit" id="go_back_and_edit" value="0" /><button OnClick="  this.style.display='none'; insertPleaseWaitDiv(this,'Please wait...');  " type="submit" class="
-								no-default-image btn btn-primary submit-btn formdefaultbut"  style="" id="id123-button-send"  value="SUBMIT FORM">Submit</button> 
+								no-default-image btn btn-primary submit-btn formdefaultbut"  style="" id="id123-button-send"  value="SUBMIT FORM">Submit</button>
 				</div></div></div>
 				</div>
 				<div class="clear"></div></div>
@@ -552,14 +555,14 @@
 				<input type="hidden" name="email"/>
 				</div>
 
-						
+
 						<input type="hidden" name="hiddenfields" id="hiddenfields" value=""/>
 						<input type="hidden" name="hiddenfields_pages" id="hiddenfields_pages" value=""/>
 						<input type="hidden" name="activepage" id="activepage" value="1"/>
 						<input type="hidden" name="totalpages" id="totalpages" value="1"/>
 						<input type="hidden" name="nextpagenr" id="nextpagenr" value="2"/>
 						<input type="hidden" name="prevpagenr" id="prevpagenr" value="0"/>
-						
+
 						<script type="text/javascript">
 						InputRules('firsttime')
 						</script><input type="hidden" name="usage" value="e"/>

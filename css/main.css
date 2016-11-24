@@ -82,8 +82,8 @@ h1 {
     h2 {
       text-align: center;
     }
-    .codepen-snippets {
-      width: 100%;
+    .codewars-logo, .github-logo {
+      width: 50px;
     }
   #contact {
     background: #ddd;
