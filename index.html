@@ -122,6 +122,18 @@
 					</div>
 				</div><!-- End .row -->
 
+        <h3><a href="http://www.mathplacementreview.com" >Math Placement Review</a></h3>
+        <div class="row">
+          <div class="col-md-6">
+            <a href="http://www.mathplacementreview.com">
+              <img src="images/mpr-logo.png" class="experience-img mpr-logo-img" alt="Math Placement Review Logo" >
+            </a>
+          </div>
+          <div class="col-md-6">
+            <p>I build the Math Placement Review website which is sponsored by <a href="https://www.capdistributing.com">CAP Distributing</a>. The source code is currently in a private repo.</p>
+          </div>
+        </div><!-- End .row -->
+
         <h3><a href="https://www.rentdynamics.com" >Rent Dynamics</a></h3>
         <div class="row">
           <div class="col-md-6">
@@ -216,8 +228,8 @@
 				<h1>Portfolio</h1>
         <div class="row">
           <div class="col-md-6">
+            <h2><img class="codewars-logo" src="images/codewars.png"> Code Wars</h2>
             <div id="codeWarsData">
-              <h2>Code Wars</h2>
               <p>An error occurred while getting the Code Wars data!</p>
             </div>
             <script type="text/javascript">
@@ -234,7 +246,6 @@
               function renderCodeWarsData(data) {
                 var codeWarsDiv = $('#codeWarsData');
                 var html = '';
-                html += '<h2><img class="codewars-logo" src="images/codewars.png"> Code Wars - ' + data.username + ' (' + data.name + ')</h2>';
                 html += '<h3>Overall Rank : ' + data.ranks.overall.name + '</h3>';
                 html += '<h3>Leaderboard Position : ' + data.leaderboardPosition + '</h3>';
                 html += '<h3>Total Katas Completed : ' + data.codeChallenges.totalCompleted + '</h3>';
@@ -247,8 +258,8 @@
             </script>
 					</div><!-- End .col-md-6 -->
           <div class="col-md-6">
+            <h2><img src="images/github.png" class="github-logo"> Github</h2>
             <div id="githubData">
-              <h2>Github</h2>
               <p>An error occurred while getting the Github data!</p>
             </div>
             <script type="text/javascript">
@@ -264,7 +275,6 @@
               function renderGithubData(data) {
                 var githubDiv = $('#githubData');
                 var html = '';
-                html += '<h2><img src="images/github.png" class="github-logo"> Github - ' + data.login + ' (' + data.name + ')</h2>';
                 html += '<h3>Company: ' + data.company + '</h3>';
                 html += '<h3>Followers: ' + data.followers + '</h3>';
                 html += '<h3>Following: ' + data.following + '</h3>';

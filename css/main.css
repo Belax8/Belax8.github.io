@@ -57,6 +57,7 @@ h1 {
       display: block;
       margin: 0 auto;
       width: 90%;
+      border-radius: 5px;
     }
   #experience {
     background: #ddd;
@@ -69,6 +70,9 @@ h1 {
         background: #303030;
         padding: 15px;
       }
+      .mpr-logo-img {
+        background: #d29151;
+      }
 		#experience h3 {
 			text-align: center;
 		}
@@ -79,9 +83,6 @@ h1 {
   #portfolio {
     background: #ddd;
   }
-    h2 {
-      text-align: center;
-    }
     .codewars-logo, .github-logo {
       width: 50px;
     }
