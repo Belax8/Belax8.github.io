@@ -1,6 +1,10 @@
 # Belax8 Change Log
 
 
+## v1.1.1
+### Bug Fixes
+ * Fixed http bugs (moved to https)
+
 ## v1.1.0
 ### Features
  * Math Placement Review Logo & Links
