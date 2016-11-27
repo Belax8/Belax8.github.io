@@ -228,9 +228,10 @@
 				<h1>Portfolio</h1>
         <div class="row">
           <div class="col-md-6">
-            <h2><img class="codewars-logo" src="images/codewars.png"> Code Wars</h2>
+            <h2><img class="portfolio-logo" src="images/codewars.png"> Code Wars</h2>
             <div id="codeWarsData">
               <p>An error occurred while getting the Code Wars data!</p>
+              <p>See my Codewars Portfolio <a href="https://www.codewars.com/users/Belax8">here</a>.</p>
             </div>
             <script type="text/javascript">
               function getCodeWarsData() {
@@ -251,16 +252,17 @@
                 html += '<h3>Total Katas Completed : ' + data.codeChallenges.totalCompleted + '</h3>';
                 html += '<h3>JavaScript Score : ' + data.ranks.languages.javascript.score + '</h3>';
                 html += '<h3>Python Score : ' + data.ranks.languages.python.score + '</h3>';
-                html += '<h3>Check out <a href="http://www.codewars.com/r/J4C9eA" target="_blank">CodeWars</a>!</h3>';
+                html += '<p>See my Codewars Portfolio <a href="https://www.codewars.com/users/Belax8">here</a>.</p>';
                 codeWarsDiv.html(html);
               }
               getCodeWarsData();
             </script>
 					</div><!-- End .col-md-6 -->
           <div class="col-md-6">
-            <h2><img src="images/github.png" class="github-logo"> Github</h2>
+            <h2><img src="images/github.png" class="portfolio-logo"> Github</h2>
             <div id="githubData">
               <p>An error occurred while getting the Github data!</p>
+              <p>See my Github Portfolio <a href="https://www.github.com/belax8">here</a>.</p>
             </div>
             <script type="text/javascript">
               function getGithubData() {
@@ -276,14 +278,26 @@
                 var githubDiv = $('#githubData');
                 var html = '';
                 html += '<h3>Company: ' + data.company + '</h3>';
+                html += '<h3>Public Repos: ' + data.public_repos + '</h3>';
                 html += '<h3>Followers: ' + data.followers + '</h3>';
-                html += '<h3>Following: ' + data.following + '</h3>';
-                html += '<h3>Check out <a href="https://www.github.com" target="_blank">Github</a>!</h3>';
+                html += '<p>See my Github Portfolio <a href="https://www.github.com/belax8">here</a>.</p>';
                 githubDiv.html(html);
               }
               getGithubData();
             </script>
           </div><!-- End .col-md-6 -->
+				</div><!-- End .row -->
+				<div class="row">
+					<div class="col-md-6">
+						<h2><img src="images/bountysource.png" class="portfolio-logo"> Bountysource</h2>
+						<div id="bountysourceData">
+							<!--<p>An error occurred while getting the Bountysource data!</p>-->
+							<p>See my Bountysource Portfolio <a href="https://www.bountysource.com/people/46853-belax8">here</a>.</p>
+						</div>
+						<script type="text/javascript">
+							// Get Bountysource data
+						</script>
+					</div><!-- End .col-md-6 -->
 				</div><!-- End .row -->
 			</div><!-- End .container -->
 		</div><!-- End #portfolio -->
