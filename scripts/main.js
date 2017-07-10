@@ -51,7 +51,7 @@ getGithubData();
 function getCodeWarsData() {
 	$.ajax({
 		type: 'GET',
-		url: 'http://cors-anywhere.herokuapp.com/https://www.codewars.com/api/v1/users/Belax8',
+		url: 'https://cors-anywhere.herokuapp.com/https://www.codewars.com/api/v1/users/Belax8',
 		// url: 'https://crossorigin.me/https://www.codewars.com/api/v1/users/Belax8',
 		dataType: 'JSON',
 		jsonpCallback: 'callback',
