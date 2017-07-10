@@ -73,6 +73,10 @@ h1 {
       .mpr-logo-img {
         background: #d29151;
       }
+      .vma-logo-img {
+        background: white;
+        max-height: 160px;
+      }
 		#experience h3 {
 			text-align: center;
 		}
