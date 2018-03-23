@@ -1,27 +1,26 @@
 
-/* SCROLL TO TOP */
+/* SCROLL TO SECTION */
 $('.scroll-to-home').click(function () {
 	$('html, body').animate({ scrollTop: $('#home').offset().top }, 'slow');
-	closeNav();
 	return false;
 });
 $('.scroll-to-experience').click(function () {
 	$('html, body').animate({ scrollTop: $('#experience').offset().top }, 'slow');
-	closeNav();
 	return false;
 });
 $('.scroll-to-portfolio').click(function () {
 	$('html, body').animate({ scrollTop: $('#portfolio').offset().top }, 'slow');
-	closeNav();
 	return false;
 });
 $('.scroll-to-contact').click(function () {
 	$('html, body').animate({ scrollTop: $('#contact').offset().top }, 'slow');
-	closeNav();
 	return false;
 });
-function closeNav() {
-	$('.navbar-collapse').collapse('hide');
+
+
+/* HELPER FUNCTIONS */
+function numberWithCommas(num) {
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 
 
@@ -39,12 +38,12 @@ function renderGithubData(data) {
 	var githubDiv = $('#githubData');
 	var html = '';
 	html += '<p>Company: ' + data.company + '</p>';
-	html += '<p>Public Repos: ' + data.public_repos + '</p>';
-	html += '<p>Followers: ' + data.followers + '</p>';
+	html += '<p>Public Repos: ' + numberWithCommas(data.public_repos) + '</p>';
+	html += '<p>Followers: ' + numberWithCommas(data.followers) + '</p>';
 	html += '<p>See my Github Portfolio <a href="https://www.github.com/belax8">here</a>.</p>';
 	githubDiv.html(html);
 }
-getGithubData();
+// getGithubData();
 
 
 /* CODEWARS */
@@ -62,36 +61,17 @@ function getCodeWarsData() {
 function renderCodeWarsData(data) {
 	var codeWarsDiv = $('#codeWarsData');
 	var html = '';
-	html += '<p>Overall Rank : ' + data.ranks.overall.name + '</p>';
-	html += '<p>Leaderboard Position : ' + data.leaderboardPosition + '</p>';
-	html += '<p>Total Katas Completed : ' + data.codeChallenges.totalCompleted + '</p>';
-	html += '<p>JavaScript Score : ' + data.ranks.languages.javascript.score + '</p>';
-	html += '<p>Python Score : ' + data.ranks.languages.python.score + '</p>';
-	//html += '<p>SQL Score : ' + data.ranks.languages.sql.score + '</p>';
+	html += '<p>Overall Rank: ' + data.ranks.overall.name + '</p>';
+	html += '<p>Leaderboard Position: #' + numberWithCommas(data.leaderboardPosition) + '</p>';
+	html += '<p>Total Katas Completed: ' + numberWithCommas(data.codeChallenges.totalCompleted) + '</p>';
+	html += '<p>JavaScript Score: ' + numberWithCommas(data.ranks.languages.javascript.score) + '</p>';
+	html += '<p>Python Score: ' + numberWithCommas(data.ranks.languages.python.score) + '</p>';
+	html += '<p>SQL Score: ' + numberWithCommas(data.ranks.languages.sql.score) + '</p>';
+  html += '<p>PHP Score: ' + numberWithCommas(data.ranks.languages.php.score) + '</p>';
 	html += '<p>See my Codewars Portfolio <a href="https://www.codewars.com/users/Belax8">here</a>.</p>';
 	codeWarsDiv.html(html);
 }
-getCodeWarsData();
-
-
-/* BountySource */
-function getBountySourceData() {
-	$.ajax({
-		type: 'GET',
-		url: '',
-		dataType: 'JSON',
-		jsonpCallback: 'callback',
-		success: function (data) { renderBountySourceData(data); },
-		error: function (error) { console.log('Error getting Code Wars data!'); }
-	});
-}
-function renderBountySourceData(data) {
-	var bountySourceDiv = $('#bountysourceData');
-	var html = '';
-	html += '<p>See my Bountysource Portfolio <a href="https://www.bountysource.com/people/46853-belax8">here</a>.</p>';
-	bountySourceDiv.html(html);
-}
-// getBountySourceData();
+// getCodeWarsData();
 
 
 /* GOOGLE ANALYTICS */
