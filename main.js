@@ -60,15 +60,7 @@ function getCodeWarsData() {
 }
 function renderCodeWarsData(data) {
 	var codeWarsDiv = $('#codeWarsData');
-	var html = '';
-	html += '<p>Overall Rank: ' + data.ranks.overall.name + '</p>';
-	html += '<p>Leaderboard Position: #' + numberWithCommas(data.leaderboardPosition) + '</p>';
-	html += '<p>Total Katas Completed: ' + numberWithCommas(data.codeChallenges.totalCompleted) + '</p>';
-	html += '<p>JavaScript Score: ' + numberWithCommas(data.ranks.languages.javascript.score) + '</p>';
-	html += '<p>Python Score: ' + numberWithCommas(data.ranks.languages.python.score) + '</p>';
-	html += '<p>SQL Score: ' + numberWithCommas(data.ranks.languages.sql.score) + '</p>';
-  html += '<p>PHP Score: ' + numberWithCommas(data.ranks.languages.php.score) + '</p>';
-	html += '<p>See my Codewars Portfolio <a href="https://www.codewars.com/users/Belax8">here</a>.</p>';
+  var html = ` I am currently ranked #${numberWithCommas(data.leaderboardPosition)} with a JavaScript score of ${numberWithCommas(data.ranks.languages.javascript.score)}. `;
 	codeWarsDiv.html(html);
 }
 // getCodeWarsData();
@@ -86,3 +78,29 @@ if (window.location.hostname != '' && window.location.hostname != 'belax-website
 	ga('create', 'UA-78205507-1', 'auto');
 	ga('send', 'pageview');
 }
+
+// On Ready (service-worker)
+$(function() {
+
+  if (window.location.hostname == '' || window.location.hostname == 'belax-website-belax-8.c9users.io') {
+    console.log('serviceWorker if off - development');
+    return;
+  }
+   
+  if (!('serviceWorker' in navigator)) {
+    console.log('serviceWorker not supported');
+    return;
+  }
+
+  navigator.serviceWorker.register(
+    '/service-worker.js', {
+      scope: '/'
+    }
+  ).then(function(registration) {
+    console.log('SW registered. Scope is: ' + registration.scope);
+  }).catch(function(err) {
+    console.log('SW failed to register');
+    console.log(err);
+  });
+
+});

@@ -1,6 +1,12 @@
 # Belax8 Change Log
 
 
+## v1.3.0
+### Features
+ * Added the dark theme
+ * Added a service worker to cache our resources
+
+
 ## v1.2.0
 ### Features
  * Added Bountysource to Portfolio page
