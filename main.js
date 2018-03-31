@@ -63,7 +63,7 @@ function renderCodeWarsData(data) {
   var html = ` I am currently ranked #${numberWithCommas(data.leaderboardPosition)} with a JavaScript score of ${numberWithCommas(data.ranks.languages.javascript.score)}. `;
 	codeWarsDiv.html(html);
 }
-// getCodeWarsData();
+getCodeWarsData();
 
 
 /* GOOGLE ANALYTICS */
@@ -97,10 +97,10 @@ $(function() {
       scope: '/'
     }
   ).then(function(registration) {
-    console.log('SW registered. Scope is: ' + registration.scope);
+    // console.log('SW registered. Scope is: ' + registration.scope);
   }).catch(function(err) {
-    console.log('SW failed to register');
-    console.log(err);
+    // console.log('SW failed to register');
+    // console.log(err);
   });
 
 });

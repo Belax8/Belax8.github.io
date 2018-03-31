@@ -30,7 +30,6 @@ var urlsToCache = [
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
-      console.log('Opened cache');
       return cache.addAll(urlsToCache);
     })
   );
@@ -57,7 +56,22 @@ self.addEventListener('fetch', function(event) {
   // try to find the data in cache, else make request
   event.respondWith(
     caches.match(event.request).then(function(response) {
-      return response || fetch(event.request);
+      // if we find it in cache
+      if (response) return response;
+      // if not, GET data and cache it
+      const request = event.request.clone();
+      return fetch(request).then(function(response) {
+        // check for errors
+        if (!response || response.status !== 200) {
+          return response;
+        }
+        
+        const responseToCache = response.clone();
+        caches.open(CACHE_NAME).then(function(cache) {
+          cache.put(event.request, responseToCache);
+        });
+        return response;
+      })
     })
   );
 });
