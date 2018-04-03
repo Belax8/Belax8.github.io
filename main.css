@@ -1,0 +1,142 @@
+/* MAIN */
+body {
+  background: #424242 !important;
+  color: #efefef;
+  /*background-image: linear-gradient(#240027, #c300fe) !important;
+  color: white !important;*/
+}
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+}
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+}
+h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+  #portfolio h3 {
+    text-align: left;
+  }
+a:link, a:visited, a:hover, a:active {
+  color: #7fc8e6;
+}
+p {
+  font-size: 20px;
+  text-indent: 30px;
+}
+svg {
+  max-height: 100%;
+}
+
+
+  /* HEADER / NAV */
+header {
+  margin-bottom: 10px;
+}
+  nav {
+    text-align: center;
+  }
+    nav ul {
+      padding: 0;
+      font-size: 20px;
+      list-style-type: none;
+    }
+      nav ul li {
+        padding: 5px 15px;
+        display: inline-block;
+      }
+
+
+  /* MAIN CONTENT */
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+  .tabs {
+    min-height: 300px;
+  }
+/* HOME */
+  .main-p {
+    margin: 30px 0;
+  }
+  .chase-img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 5px;
+    max-width: 200px;
+  }
+/* EXPERIENCE */
+  .experience-header {
+    padding-top: 25px;
+    padding-bottom: 5px;
+  }
+  .experience-img {
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+  }
+    .rent-dynamics-logo {
+      background: #303030;
+      padding: 15px;
+    }
+    .mpr-logo-img {
+      background: #d29151;
+    }
+    .vma-logo-img {
+      background: white;
+      max-height: 160px;
+    }
+    #experience h3 a:link, #experience h3 a:visited, #experience h3 a:active {
+      color: white;
+      text-decoration: none;
+    }
+    #experience h3 a:hover {
+      color: #7fc8e6;
+    }
+/* PORTFOLIO */
+  .portfolio-header {
+    padding-top: 25px;
+    padding-bottom: 5px;
+  }
+  .portfolio-logo {
+    width: 50px;
+  }
+  #portfolio h3 a:link, #portfolio h3 a:visited, #portfolio h3 a:active {
+    color: white;
+    text-decoration: none;
+  }
+  #portfolio h3 a:hover {
+    color: #7fc8e6;
+  }
+/* CONTACT */
+  #contact p {
+    text-align: center;
+  }
+  #contact .contact-form {
+    padding: 10px;
+  }
+
+
+/* FOOTER */
+footer {
+  background: #333;
+  color: white;
+}
+  footer p {
+    margin: 5px;
+    text-align: center;
+  }
+  footer a {
+    text-decoration: none;
+  }
+  .footer-icon {
+    width: 50px;
+    margin: 0px 15px;
+  }

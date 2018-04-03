@@ -1,78 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http:equiv="Content-Type" content="text/html; charset-UTF-8" />
 	<meta name="robots" content="noodp" />
+	<meta name="keywords" content="web, developer, profile" />
+	<meta name="theme-color" content="#424242">
 	<link rel="icon" href="https://avatars1.githubusercontent.com/u/18056953?v=3&s=460" type="image/png" sizes="16x16" >
 
 	<title>Chase @Belax8</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="main.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
-
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-	<header>
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-	    <div class="container-fluid">
-	      <div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".myNavbar">
-	          <span class="icon-bar"></span>
-	          <span class="icon-bar"></span>
-	          <span class="icon-bar"></span>
-	        </button>
-			<a href="#home"><img src="https://avatars1.githubusercontent.com/u/18056953?v=3&s=460" class="belax8-logo scroll-to-home"/></a>
-			<a class="navbar-brand scroll-to-home" href="#home">Chase</a>
-	      </div>
-	      <div class="collapse navbar-collapse myNavbar">
-	        <ul class="nav navbar-nav navbar-right">
-	          <li id="home-li" class="active">
-	            <a href="#home" class="scroll-to-home"><span class="glyphicon glyphicon-home"></span> Home</a>
-	          </li>
-	          <li id="experience-li" class="">
-	            <a href="#experience" class="scroll-to-experience"><span class="glyphicon glyphicon-info-sign"></span> Experience</a>
-	          </li>
-	          <li id="portfolio-li" class="">
-	            <a href="#portfolio" class="scroll-to-portfolio"><span class="glyphicon glyphicon-briefcase"></span> Portfolio</a>
-	          </li>
-	          <li id="contact-li" class="">
-	            <a href="#contact" class="scroll-to-contact"><span class="glyphicon glyphicon-comment"></span> Contact</a>
-	          </li>
-	        </ul>
-	      </div><!-- End .collapse .navbar-collapse .myNavbar -->
-	    </div><!-- End .container-fluid -->
-	  </nav>
-	</header>
 
+  <h1>Chase Peterson</h1>
+  <header>
+    <nav>
+      <ul>
+        <li id="home-li">
+          <a href="#home" class="scroll-to-home">About Me</a>
+        </li>
+        <li id="experience-li">
+          <a href="#experience" class="scroll-to-experience">Experience</a>
+        </li>
+        <li id="portfolio-li">
+          <a href="#portfolio" class="scroll-to-portfolio">Portfolio</a>
+        </li>
+        <li id="contact-li">
+          <a href="#contact" class="scroll-to-contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
 	<div id="page-wrap">
 
 		<div class="tabs" id="home">
 			<div class="container">
-				<h1>Home</h1>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<p class="main-p">My name is Chase. I'm a Front End Developer.</p>
-					</div>
-				</div><!-- End .row -->
         <div class="row">
           <div class="col-xs-6 col-xs-offset-3 col-md-2 col-md-offset-5">
             <img src="images/chase.jpg" alt="Chase" class="chase-img"/>
           </div>
         </div><!-- End .row -->
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<p class="main-p">I am currently working as a Software Developer at <a href="https://rentdynamics.com/">Rent Dynamics</a>. I am currently working on converting Angular 1 code to Angular 2.</p>
+        <div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<p class="main-p">I'm a proud husband and father. I love playing any sport, but my favorite sport would have to be lacrosse.</p>
 					</div>
 				</div><!-- End .row -->
-        <div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<p class="main-p">I spend my free time playing with my Raspberry Pi and playing on <a href="http://www.codewars.com/r/J4C9eA">codewars</a>. I have even written a few codewars katas. I built <a href="https://github.com/Belax8/codewars-kata-list/blob/master/README.md">this repo</a> to list the katas that I have created.</p>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<p class="main-p">I'm currently working as a Software Developer at <a href="https://rentdynamics.com/">Rent Dynamics</a>. I spend most of my time writing AngularJS and Angular2 code, but I also get to write some Python, SQL and Postgres as needed. I spend my free time playing with my Raspberry Pi and playing on <a href="https://www.codewars.com/users/Belax8">Codewars</a>. I have even written a few Codewars katas. I built <a href="https://github.com/Belax8/codewars-kata-list/blob/master/README.md">this repo</a> to list the katas that I have created.</p>
 					</div>
 				</div><!-- End .row -->
 			</div><!-- End .container -->
@@ -80,12 +62,12 @@
 
     <div class="tabs" id="experience">
 			<div class="container">
-				<h1>Experience</h1>
+				<h2>Experience</h2>
 
-				<h3><a href="https://www.capdistributing.com" >CAP Distributing Website</a></h3>
+				<h3 class="experience-header"><a href="https://www.capdistributing.com">CAP Distributing</a></h3>
 				<div class="row">
 					<div class="col-md-6">
-						<a href="https://www.capdistributing.com" >
+						<a href="https://www.capdistributing.com">
 							<svg version="1.0" xmlns="http://www.w3.org/2000/svg" class="experience-img cap-distributing-logo" viewBox="0 0 1736.000000 434.000000" preserveAspectRatio="xMidYMid meet">
 								<g transform="translate(0.000000,434.000000) scale(0.100000,-0.100000)" fill="#0091ce" stroke="#0091ce">
 									<path d="M2555 4048 c4 -46 13 -146 20 -223 8 -77 42 -455 76 -840 34 -385 62 -701 63 -702 3 -3 156 34 161 39 2 2 -3 73 -11 158 -17 185 -121 1336 -134 1499 -6 63 -12 116 -14 119 -6 6 -126 31 -149 32 -17 0 -18 -7 -12 -82z"/>
@@ -118,11 +100,11 @@
 						</a>
 					</div>
 					<div class="col-md-6">
-						<p>I was able to build this website for a small start up. CAP Distributing's website is built with Angular.js and Bootstrap. The source code is availiable <a href="https://github.com/CAPDistributing/cap-website" >here</a>. I also build their admin page in Angular 2. The source code is in a private repo.</p>
+						<p>I built <a href="https://www.capdistributing.com">CAP Distributing's website</a> with AngularJS and Bootstrap. The source code is availiable <a href="https://github.com/CAPDistributing/cap-website">here</a>. I have also worked on some side projects for them including their admin site which I built with Angular2 and some npm packages that they use for their private apps. One npm package can be found <a href="https://github.com/CAPDistributing/cap-js-helpers">here</a>.</p>
 					</div>
 				</div><!-- End .row -->
 
-        <h3><a href="https://www.mathplacementreview.com" >Math Placement Review</a></h3>
+        <h3 class="experience-header"><a href="https://www.mathplacementreview.com">Math Placement Review</a></h3>
         <div class="row">
           <div class="col-md-6">
             <a href="https://www.mathplacementreview.com">
@@ -130,11 +112,11 @@
             </a>
           </div>
           <div class="col-md-6">
-            <p>I built the <a href="https://www.mathplacementreview.com">Math Placement Review website</a> which is sponsored by <a href="https://www.capdistributing.com">CAP Distributing</a>. The source code is currently in a private repo.</p>
+            <p>I built the <a href="https://www.mathplacementreview.com">Math Placement Review website</a> which is sponsored by <a href="https://www.capdistributing.com">CAP Distributing</a>. The source code is currently in a private repo. Math Placement Review is a great place for people who are trying to brush up on their math skills. It has some great content that allows you to study for the College Math Accuplacer test, or other similar tests.</p>
           </div>
         </div><!-- End .row -->
 
-        <h3><a href="http://www.visitmyancestors.com" >Visit My Ancestors</a></h3>
+        <h3 class="experience-header"><a href="http://www.visitmyancestors.com">Visit My Ancestors</a></h3>
         <div class="row">
           <div class="col-md-6">
             <a href="http://www.visitmyancestors.com">
@@ -142,14 +124,14 @@
             </a>
           </div>
           <div class="col-md-6">
-            <p>I am building the <a href="http://www.visitmyancestors.com">Visit My Ancestors website</a> which allows users to login via <a href="https://familysearch.org/">FamilySearch</a> and see where their ancestors are buried. The source code is currently in a private repo.</p>
+            <p>I built the <a href="http://www.visitmyancestors.com">Visit My Ancestors website</a> with Angular2. I was able to use the <a href="https://familysearch.org/">FamilySearch</a> API to find where your ancestors are buried and then plot them on a map with the <a href="https://developers.google.com/maps/">Google Maps API</a>. The source code is currently in a private repo.</p>
           </div>
         </div><!-- End .row -->
 
-        <h3><a href="https://www.rentdynamics.com" >Rent Dynamics</a></h3>
+        <h3 class="experience-header"><a href="https://www.rentdynamics.com">Rent Dynamics</a></h3>
         <div class="row">
           <div class="col-md-6">
-            <a href="https://www.rentdynamics.com" >
+            <a href="https://www.rentdynamics.com">
               <svg version="1.1" id="Layer_1" class="experience-img rent-dynamics-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               	 viewBox="0 0 195.7 39.5" enable-background="new 0 0 195.7 39.5" xml:space="preserve">
                 <path id="Dynamics" fill="#7EBE2B" d="M89.8,35.4V12.6h5.1c2.4,0,4.1,0.5,5.1,1.5c1,1,1.5,2.7,1.5,5.1v9c0,2.5-0.5,4.4-1.5,5.5
@@ -228,7 +210,7 @@
             </a>
           </div>
           <div class="col-md-6">
-            <p>I am currently working on converting <a href="https://www.rentdynamics.com">Rent Dynamic's</a> Angular 1 code to Angular 2. The code is currently in a private repository.</p>
+            <p>I am currently working at <a href="https://www.rentdynamics.com">Rent Dynamics</a> where I spend most of my time writing AngularJS and Angular2 code. We are a small start up, so I get to wear many hats like working in Python, SQL and Postgres. Rent Dynamics is a multifamily leasing software solution. Their services include: managing leads and residents, offsite contact center for calls, texts & email, reporting credit for tenants, and much more.</p>
           </div>
         </div><!-- End .row -->
 
@@ -237,52 +219,47 @@
 
     <div class="tabs" id="portfolio">
 			<div class="container">
-				<h1>Portfolio</h1>
+				<h2>Portfolio</h2>
         <div class="row">
           <div class="col-md-6">
-            <h2><img class="portfolio-logo" src="images/codewars.png"> Codewars</h2>
-            <div id="codeWarsData">
-							<!-- This will show if an error ocurred while getting the data -->
-              <p>An error occurred while getting the Codewars data!</p>
-              <p>See my Codewars Portfolio <a href="https://www.codewars.com/users/Belax8">here</a>.</p>
-            </div>
+            <h3 class="portfolio-header"><a href="https://www.codewars.com/users/Belax8"><img class="portfolio-logo" src="images/codewars.png"> Codewars</a></h3>
+            <p>I enjoy the challenges on Codewars. It allows me to see unique challenges and forces me to solve them in unique ways. I try to spend some of my free time improving my skills on Codewars.<span id="codeWarsData"> </span>You can see my Codewars Portfolio <a href="https://www.codewars.com/users/Belax8">here</a>.</p>
 					</div><!-- End .col-md-6 -->
           <div class="col-md-6">
-            <h2><img src="images/github.png" class="portfolio-logo"> Github</h2>
-            <div id="githubData">
-							<!-- This will show if an error ocurred while getting the data -->
-              <p>An error occurred while getting the Github data!</p>
-              <p>See my Github Portfolio <a href="https://www.github.com/belax8">here</a>.</p>
-            </div>
+            <h3 class="portfolio-header"><a href="https://www.github.com/Belax8"><img src="images/white-github.png" class="portfolio-logo"> Github</a></h3>
+            <p>I love using Github to store and manage my projects. I'm always looking for ways that I can contribute to projects on Github.<span id="githubData"> </span>You can see my Github Portfolio <a href="https://www.github.com/belax8">here</a>.</p>
           </div><!-- End .col-md-6 -->
 				</div><!-- End .row -->
 				<div class="row">
 					<div class="col-md-6">
-						<h2><img src="images/bountysource.png" class="portfolio-logo"> Bountysource</h2>
-						<div id="bountysourceData">
-							<!--<p>An error occurred while getting the Bountysource data!</p>-->
-							<p>See my Bountysource Portfolio <a href="https://www.bountysource.com/people/46853-belax8">here</a>.</p>
-						</div>
+						<h3 class="portfolio-header"><a href="https://www.bountysource.com/people/46853-belax8"><img src="images/bountysource-v2.png" class="portfolio-logo"> Bountysource</a></h3>
+						<p>I really enjoy working on open source projects. I think it's fun and it benefits everyone. You can see my Bountysource Portfolio <a href="https://www.bountysource.com/people/46853-belax8">here</a>.</p>
 					</div><!-- End .col-md-6 -->
+          <div class="col-md-6">
+            <h3 class="portfolio-header"><a href="http://codepen.io/Belax8/"><img src="images/codepen.png" class="portfolio-logo"> Codepen</a></h3>
+            <p>I test a lot of my project ideas on Codepen. Most of my projects are just prototypes, but they allow me to get a basic proof of concept. You can see my Codepen Portfolio <a href="http://codepen.io/Belax8/">here</a>.</p>
+          </div><!-- End .col-md-6 -->
 				</div><!-- End .row -->
 			</div><!-- End .container -->
 		</div><!-- End #portfolio -->
 
     <div class="tabs" id="contact">
 			<div class="container">
-			<h1>Contact Me</h1>
+			<h2>Contact Me</h2>
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
 						<p class="main-p">If you'd like to contact me, PM me on <a href="https://gitter.im" >Gitter</a> (@Belax8) or feel free to fill out this form and I will get back to you as soon as I can!</p>
 					</div>
         </div> <!-- End .row -->
+        
         <!-- www.123contactform.com script begins here -->
         <iframe allowTransparency="true" style="min-height:500px; height:inherit; overflow:auto;" width="100%" id="contactform123" name="contactform123" marginwidth="0" marginheight="0" frameborder="0" src="https://www.123contactform.com/my-contact-form-2263830.html">
-          <p>Your browser does not support iframes. The contact form cannot be displayed. Please use another contact method (phone, fax etc)</p>
+          <p>Your browser does not support iframes. The contact form cannot be displayed. Please PM me on <a href="https://gitter.im" >Gitter</a>.</p>
         </iframe>
-          
-        <p align='center' class='float-left full-with'>Powered by <a class="footerLink13" title="123ContactForm" href="https://www.123contactform.com">123ContactForm</a>&nbsp;|&nbsp;<a style="font-size:small!important;color:#000000!important; text-decoration:underline!important;" title="Looks like phishing? Report it!" href="https://www.123contactform.com/sfnew.php?s=123contactform-52&control119314=http:///contact-form--2263830.html&control190=Report%20abuse" rel="nofollow">Report abuse</a></p><!-- www.123contactform.com script ends here -->
-			
+        <!-- <p align='center' class='float-left full-with'>Powered by <a class="footerLink13" title="123ContactForm" href="https://www.123contactform.com">123ContactForm</a>&nbsp;|&nbsp;<a style="font-size:small!important;color:#000000!important; text-decoration:underline!important;" title="Looks like phishing? Report it!" href="https://www.123contactform.com/sfnew.php?s=123contactform-52&control119314=http:///contact-form--2263830.html&control190=Report%20abuse" rel="nofollow">Report abuse</a></p> -->
+
+        <!-- www.123contactform.com script ends here -->
+
 			</div>
 		</div><!-- End #contact -->
 
@@ -292,16 +269,15 @@
 	<footer>
 		<div class="container">
 			<p>
-      	<!--<a href="http://codepen.io/Belax8/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a>-->
-				<a href="https://github.com/Belax8" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-				<a href="https://www.linkedin.com/in/chase-peterson-4ba1b211a" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+      	<a href="http://codepen.io/Belax8/" target="_blank"><img class="footer-icon" src="images/codepen-s.png" /></a>
+				<a href="https://github.com/Belax8" target="_blank"><img class="footer-icon" src="images/github-white.png" /></a>
+				<a href="https://www.linkedin.com/in/chase-peterson-4ba1b211a" target="_blank"><img class="footer-icon" src="images/linkedin.png" /></a>
 			</p>
-			<!-- <p>&copy;2017 Chase</p> -->
 		</div><!-- End .container -->
 	</footer>
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<script src="scripts/main.js"></script>
+	<script src="main.js"></script>
 
 </body>
 </html>
