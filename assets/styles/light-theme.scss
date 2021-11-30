@@ -1,0 +1,26 @@
+$light-primary: mat-palette($mat-indigo);
+$light-accent: mat-palette($mat-pink, A200, A100, A400);
+$light-warn: mat-palette($mat-red);
+
+$light-theme: mat-light-theme(
+  (
+    color: (
+      primary: $light-primary,
+      accent: $light-accent,
+      warn: $light-warn
+    )
+  )
+);
+
+// another option
+/*
+$light-theme-primary: mat-palette($mat-indigo, 700, 300, 900);
+$light-theme-accent: mat-palette($mat-light-blue);
+$light-theme-warn: mat-palette($mat-deep-orange, A200);
+
+$light-theme: mat-light-theme(
+  $light-theme-primary,
+  $light-theme-accent,
+  $light-theme-warn
+);
+*/
